@@ -1,0 +1,182 @@
+* {
+  /* background-color: black;
+  color: white; */
+  /* box-sizing: border-box; */
+  margin: 0;
+}
+
+h1 {
+  background-color: cadetblue;
+  padding: 16px;
+  text-align: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.note-app {
+  text-align: center;
+  align-items: center;
+}
+
+.empty {
+  background-color: whitesmoke;
+  border: 1px solid grey;
+  border-radius: 8px;
+  width: 20%;
+  margin: 12px auto;
+  padding: 16px 0;
+}
+
+.empty img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 8px;
+}
+
+.add-notes {
+  margin: 16px;
+  /* background: red; */
+}
+
+.add-notes section {
+  max-width: 50%;
+  padding: 24px 0px;
+  border: 2px solid cadetblue;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  gap: 16px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+input[type="text"],
+textarea {
+  border: 2px solid grey;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.form-input p {
+  text-align: start;
+  font-size: 10px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.default-text {
+  color: black;
+}
+
+.red-text {
+  color: red;
+}
+
+.form-input div {
+  /* background-color: #73ec8b; */
+  margin: 8px 0px;
+  text-align: start;
+}
+
+.form-input div [type="checkbox"] {
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.form-input button {
+  background-color: #73ec8b;
+  padding: 12px;
+  border-radius: 16px;
+  border: 0px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition-duration: 0.3s;
+  margin-top: 16px;
+}
+
+.form-input button:hover {
+  cursor: pointer;
+  background-color: #54c392;
+}
+
+.input-search {
+  margin: 8px;
+  width: 30%;
+}
+
+.note-list {
+  margin: 8px;
+  padding: 8px;
+  display: flex;
+  text-align: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.note-item {
+  background-color: whitesmoke;
+  padding: 16px;
+  width: 20%;
+  margin: 8px;
+  border: 1px solid whitesmoke;
+  border-radius: 12px;
+  box-shadow: 0px 1px 8px grey;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-item h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.note-item p {
+  color: grey;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.note-item button {
+  margin: 16px 8px 0 0;
+  padding: 8px 16px;
+  border: 0px;
+  border-radius: 16px;
+  font-size: 10px;
+}
+
+.note-item button:hover {
+  cursor: pointer;
+}
+
+.btn-delete {
+  background-color: red;
+  color: white;
+}
+
+.btn-archived {
+  background-color: #54c392;
+  color: white;
+}
+
+hr {
+  margin: 16px;
+}
