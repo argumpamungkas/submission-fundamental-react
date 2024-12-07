@@ -3,13 +3,22 @@
 import React from "react";
 
 function NoteItem({ note, archived, onDelete, onArchived }) {
-  const id = note.id;
+  const date = new Date(note.createdAt);
+  const showDate = `${date.getDate().toString().padStart(2, "0")}-${(
+    date.getMonth() + 1
+  )
+    .toString()
+    .padStart(2, "0")}-${date.getFullYear()} ${date
+    .getHours()
+    .toString()
+    .padStart(2, "0")}:${date.getMinutes().toString().padStart(2, "0")}`;
   return (
     <>
       <div className="note-item">
         <section>
           <h3>{note.title}</h3>
           <p>{note.body}</p>
+          <p className="date-text">Create: {showDate}</p>
         </section>
         <section>
           <button

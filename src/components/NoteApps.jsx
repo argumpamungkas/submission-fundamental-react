@@ -3,13 +3,14 @@ import FormNote from "./FormNote";
 import EmptyContainer from "./EmptyContainer";
 import FormSearch from "./FormSearch";
 import Notes from "./Notes";
+import { getInitialData } from "../utils";
 
 class NoteApps extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      notes: [],
+      notes: getInitialData(),
       search: "",
     };
 

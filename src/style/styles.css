@@ -151,8 +151,14 @@ textarea {
 
 .note-item p {
   color: grey;
+}
+
+.note-item .date-text {
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 12px;
+  margin-top: 8px;
+  font-weight: bold;
 }
 
 .note-item button {
